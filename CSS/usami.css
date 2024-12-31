@@ -1,0 +1,115 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  body {
+    text-align: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fdd18456;
+    background-image: url('img/645.png');
+    background-blend-mode: overlay;
+    background-repeat: repeat;
+  }
+  nav {
+    position: absolute;
+    width: 100%;
+    background-color: #880f0a;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+   
+  }
+  
+  nav ul li {
+    margin: 5px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff8ce;
+    padding: 20px 50px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    background-color: #0a0e4b;
+    border-radius: 50px;
+  }
+  .page {
+    width: 80%;
+    max-width:100%;
+    padding: 20px;
+    margin-top:120px;
+    background-color: #380909;
+    border-radius: 8px;
+  }
+  
+  .page h1 {
+    margin-bottom: 10px;
+    color: #e6c09a;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .page p {
+    color: #fff8f8;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  .page p1 {
+    color: #ffe4d3;
+    line-height: 1.6;
+    font-size: 20px;
+  }
+  .page p2 {
+    color: #ffe4d3;
+    line-height: 1.6;
+    font-size:20px;
+  }
+  .page p3 {
+    color: #ffe4d3;
+    line-height: 1.6;
+    font-size: 60px;
+  }
+  .page p4 {
+    color: #ffe4d3;
+    line-height: 1.6;
+    font-size: 6px;
+  }
+  .responsive-image {
+    width: 100%; /* 圖片寬度占容器的 100% */
+    height: auto; /* 自動計算高度，保持圖片比例 */
+    max-width: 500px; /* 最大寬度限制 */
+  }
+  .image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 每個格子最小150px，隨螢幕大小自動調整 */
+  gap: 10px; /* 設置圖片之間的間距 */
+}
+
+.image-grid img {
+  width: 100%; /* 圖片填滿格子寬度 */
+  height: auto; /* 保持比例 */
+  border-radius: 15px;
+  }
+.video-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 設置影片間的間距 */
+  align-items: center; /* 讓影片居中顯示 */
+}
+.center-flex {
+  display: flex;
+  justify-content: center; /* 水平置中 */
+  align-items: top; /* 垂直置中 */
+  height: 50vh; /* 可選，若希望容器填滿視窗高度 */
+}
